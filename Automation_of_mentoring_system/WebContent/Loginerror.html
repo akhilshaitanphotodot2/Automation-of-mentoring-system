@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Maharishi Markandeshwar Demmed University</title>
+
+<!-- Linking External Css File -->
+<link rel="stylesheet" href="login.css">
+
+<!-- Linking eternal css file for Modal -->
+<link rel="stylesheet" href="Modal.css">
+
+<!-- Resizing According to the window -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+<body>
+
+	<!-- Login box container -->
+	<div class="loginbox">
+
+		<!-- logo -->
+		<a href="https://www.mmumullana.org/"> <img class="logo"
+			src="User.png" alt="logo">
+		</a> <br>
+		<br>
+		<br>
+		<!-- Form -->
+		<form action="userLogin" method="post" align="centre" id="one">
+
+			<!-- UserName -->
+			<input type="text" name="User" placeholder="User Name"> <br>
+
+			<!-- Password -->
+			<input type="password" name="Password" placeholder="Password">
+
+			<br>
+			<!-- Selection -->
+			<select name="usertype">
+				<option value="mentorlogin"><font text-align="center">Mentor</font>
+				</option>
+				<option value="studentlogin"><font text-align="center">Student</font></option>
+				<option value="subjectteacherlogin"><font
+						text-align="center">Subject Teacher</font></option>
+				<option value="resultbranchlogin"><font text-align="center">Result
+						Branch</font></option>
+			</select> <br> <br>
+
+			<!-- Forget Password -->
+			<a href="#" class="fp">Forget Password?</a> &nbsp;
+			<!-- Change Password -->
+			<a href="#" class="cp"
+				onclick="document.getElementById('id01').style.display='block'">Change
+				Password?</a> <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color="red" text-align="center">*Check your username or
+				password*</font> <br>
+
+			<!-- Submit Button -->
+			<input type="submit" id="submit" name="Submit" value="Sign In">
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!-- Inserting webname -->
+	<div class="Webtitile">
+		<img class="webname" src="webtitle.png" alt="name">
+	</div>
+	<br>
+
+	<!-- The Modal -->
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'"
+			class="close" title="Close Modal">&times;</span>
+
+		<!-- Modal Content -->
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<img src="changepassword.png" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+				<input type="text" class="modalpass" placeholder="User Name"
+					name="uname" required> <br> <input type="password"
+					class="modalpass" placeholder="Enter Old-Password" name="oldp"
+					required> <br> <input type="password"
+					class="modalpass" placeholder="Enter New-Password" name="psw"
+					required> <br> <input type="password"
+					class="modalpass" placeholder="Confirm New-Password" name="npsw"
+					required> <br>
+				<button type="submit">Change Password</button>
+				<br>
+				<button type="button"
+					onclick="document.getElementById('id01').style.display='none'"
+					class="cancelbtn">Cancel</button>
+			</div>
+		</form>
+	</div>
+	<!-- End of Modal -->
+	<!-- Footer -->
+	<br>
+
+	<!-- Script Start -->
+	<script>
+var modal = document.getElementById('id01');
+
+<!--When the user clicks anywhere outside of the modal, close it-->
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	<!-- Script End -->
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+@CHARSET "ISO-8859-1";
+
+/*Desigining a body tag*/
+body {
+	background: url("bg.jpg");
+	background-size: cover;
+	font: cursive;
+	background-repeat: none;
+}
+
+/*Desiging Login box*/
+.loginbox {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 420px;
+	border-radius: 1000px;
+	box-sizing: border-box;
+	background: rgba(211, 211, 211, .2);
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), 0px 1px 15px
+		rgba(0, 246, 255, 0.5);
+}
+
+/*logo size and place adjustment*/
+.logo {
+	transition: 0.5s;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: calc(-100px/ 2);
+	margin-left: 120px
+}
+
+/*Setting Hover Property on logo*/
+.logo:hover {
+	transition: 0.5s;
+	width: 90px;
+	height: 90px
+}
+
+/*Setting position of Form*/
+#one {
+	margin-left: 8px;
+	margin-top: 15%;
+}
+/*SETTING SOME PROPERTIES TO COMMONLY ALL THE INPUT FIELD*/
+input {
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), 0px 1px 15px
+		rgba(0, 246, 255, 0.5);
+	display: block;
+	font-size: 14px;
+	width: 180px;
+	height: 30px;
+	margin: 10px auto;
+	padding: 10px 8px 10px 8px;
+	border-radius: 5px;
+	/*  box-shadow: inset 0 1px 2px rgba(0,0,0, .55), 0px 1px 1px rgba(255,255,255,.5);*/
+	border: 1px solid #666;
+}
+
+input {
+	opacity: 0.7;
+}
+
+input:hover, input:focus {
+	opacity: .9;
+	color: #08c;
+	border: 1px solid #08c;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, .25), inset 0px 3px 6px
+		rgba(0, 0, 0, .25);
+}
+
+/*Desiging input field type text*/
+input[type="text"] {
+	transition: 0.5s;
+	padding-left: 10px;
+	padding-top: 5px;
+	border-radius: 20px;
+	padding-bottom: 5px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*Setting Hover Property to input field type text*/
+input[type="text"]:focus {
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), 0px 1px 15px
+		rgba(0, 246, 255, 0.5);
+	border: 1px solid #08C;
+	transition: 0.5s;
+	width: 180px;
+	background-color: aqua;
+	border-bom: 2px solid red;
+}
+
+/*Desiging input field type password*/
+input[type="password"] {
+	transition: 0.5s;
+	padding-left: 10px;
+	padding-top: 5px;
+	border-radius: 20px;
+	padding-bottom: 5px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*Setting Hover Property to input field type password*/
+input[type="password"]:focus {
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), 0px 1px 15px
+		rgba(0, 246, 255, 0.5);
+	border: 1px solid #08C;
+	transition: 0.5s;
+	width: 120px;
+	background-color: aqua;
+	border-bom: 2px solid red;
+}
+
+/*Desiging input field type submit*/
+input[type="submit"] {
+	border-radius: 30%;
+	border: none;
+	text-decoration: none;
+	font-size: 9px;
+	word-spacing: 2px;
+	text-shadow: black;
+}
+
+/*Applying adjustment and design on select tag*/
+select {
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), 0px 1px 15px
+		rgba(0, 246, 255, 0.5);
+	transition: 0.5s;
+	padding-left: 10px;
+	padding-top: 5px;
+	border-radius: 20px;
+	padding-bottom: 5px;
+	border: none;
+	margin-left: 110px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*applying hover property on select tag*/
+select:hover, select:focus {
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.35), 0px 1px 15px
+		rgba(0, 246, 255, 0.5);
+	border: 0px solid #08C;
+	transition: 0.5s;
+	background-color: aqua;
+}
+
+/*Applying Animation on forget password*/
+.fp {
+	margin-left: 35px;
+	margin-top: 50px;
+	text-decoration: none;
+	color: white;
+}
+
+/*Applying Hover on forget Password*/
+.fp:hover, .fp:focus {
+	color: captiontext;
+}
+
+/*Applying Animation on Change password*/
+.cp {
+	margin-left: 15px;
+	margin-top: 50px;
+	text-decoration: none;
+	color: white;
+}
+
+/*Applying Hover on change Password*/
+.cp:hover, .cp:focus {
+	color: captiontext;
+}
+
+/*aligining all the placeholder*/
+::placeholder {
+	word-spacing: 2px;
+	color: highlighttext;
+	text-align: center;
+}
+
+/*aligining webname*/
+.webname {
+	transition: 0.5s;
+	width: 500px;
+	height: 300px;
+	margin-left: 35%;
+	marging-top: 20px;
+}
+
+/*Attempting hover on webname*/
+.webname:hover {
+	transition: 0.5s;
+	animation: shake 2s;
+	animation-iteration-count: infinite;
+}
+
+@
+keyframes shake { 
+	
+0% 
+{
+transform: translate(1px, 1px) rotate(0deg);
+}
+10%
+{
+transform:translate(-1px,-2px)rotate(-1deg); 
+}
+20%
+{
+transform:translate(-3px,0px)rotate(1deg);
+}
+30%
+{
+transform:translate(3px,2px)rotate(0deg); 
+}
+40%
+{
+transform:translate(1px,-1px)rotate(1deg); 
+}
+50%
+{
+transform:translate(-1px,2px)rotate(-1deg); 
+}
+60%
+{
+transform:translate(-3px,1px)rotate(0deg);
+ 
+}
+70%
+{
+transform:translate(3px,1px)rotate(-1deg);
+ 
+}
+80%
+{
+transform:translate(-1px,-1px)rotate(1deg);
+ 
+}
+90%
+{
+transform:translate(1px,2px)rotate(0deg);
+ 
+}
+100%
+{
+transform:translate(1px,-2px)rotate(-1deg); 
+}
+}
+h1 {
+	margin-left: 100px;
+}

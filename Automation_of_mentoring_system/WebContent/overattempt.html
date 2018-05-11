@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Maharishi Markandeshwar Demmed University</title>
+
+<!-- Linking External Css File -->
+<link rel="stylesheet" href="login.css">
+
+<!-- Linking eternal css file for footer -->
+<link rel="stylesheet" href="footer.css">
+
+
+<!-- Linking eternal css file for Modal -->
+<link rel="stylesheet" href="Modal.css">
+
+</head>
+<body>
+
+	<!-- Inserting webname -->
+	<div class="Webtitile" style="margin-right: 200px; margin-top: -55px">
+		<img class="webname" src="webtitle.png" alt="name">
+	</div>
+	<br>
+	<!-- End of Webname -->
+
+	<font style="margin-left: 320px" color="red" size="5px"><b>Error:
+			<b><i>Maximum Attempt for Wrong<a href="#" class="fp"
+					onclick="document.getElementById('fp').style.display='block'">Username
+						or Password</a></i></b></font>
+
+	<!-- The Modal to forget password-->
+	<div id="fp" class="modal">
+		<span onclick="document.getElementById('fp').style.display='none'"
+			class="close" title="Close Modal">&times;</span>
+
+		<!-- Modal Content -->
+		<form name="forgetPassword" method="post"
+			class="modal-content animate">
+			<div class="imgcontainer">
+				<img src="changepassword.png" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+				<input type="email" class="modalpass"
+					placeholder="Registered Mail Id" name="uname" required> <br>
+				<button type="submit">Change Password</button>
+				<br>
+				<button type="button"
+					onclick="document.getElementById('fp').style.display='none'"
+					class="cancelbtn">Cancel</button>
+				<br> <br>
+				<caption>
+					<i>Password will be mailed to the respective Mail Id</i>
+				</caption>
+			</div>
+		</form>
+	</div>
+	<!-- modal end-->
+
+	<!-- Script Start for forget passowrd -->
+	<script>
+var modal1 = document.getElementById('fp');
+
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+</script>
+	<!-- Script End -->
+
+</body>
+</html>
